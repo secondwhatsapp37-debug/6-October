@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>٦ أكتوبر ١٩٧٣ — نصر صنعه شعب</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#120a08">
+<meta name="description" content="مصر دائماً .. قصة نصر">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%2234%22 fill=%22%23ce1126%22/><rect y=%2233%22 width=%22100%22 height=%2234%22 fill=%22%23fff%22/><rect y=%2266%22 width=%22100%22 height=%2234%22 fill=%22%23000%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#ce1126; --black:#0b0907; --gold:#e3b04b; --gold2:#fff0b8; --ember:#ff7a2f;
+  --paper:#d9bf8c; --night:#120a08; --text:#fbefd9; --muted:rgba(251,239,217,.68);
+  --title:'Aref Ruqaa','Amiri',serif; --body:'Amiri','Noto Naskh Arabic',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow-x:hidden}
+body{
+  font-family:var(--body);color:var(--text);
+  background:
+    radial-gradient(140% 55% at 50% 62%,rgba(255,122,47,.55),transparent 62%),
+    linear-gradient(180deg,#0c1530 0%,#2a2f5c 26%,#8a4a52 50%,#e0803f 66%,#3a1b10 82%,#120a08 100%);
+  background-attachment:fixed;
+  -webkit-user-select:none;user-select:none;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+/* aged-paper grain over everything */
+body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.16;mix-blend-mode:multiply;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .3  0 0 0 0 .2  0 0 0 0 .1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+body::before{content:"";position:fixed;inset:0;z-index:49;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 45%,transparent 55%,rgba(0,0,0,.6))}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+
+/* ---------- gate ---------- */
+#gate{position:fixed;inset:0;z-index:40;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;text-align:center;padding:30px;
+  background:radial-gradient(90% 60% at 50% 55%,#4a1f12 0%,#120a08 70%);
+  transition:opacity 1.6s ease,visibility 1.6s;cursor:pointer}
+#gate.out{opacity:0;visibility:hidden}
+.stripes{width:84px;height:54px;border-radius:3px;overflow:hidden;box-shadow:0 0 40px rgba(206,17,38,.5);animation:breathe 4s ease-in-out infinite}
+.stripes i{display:block;height:33.4%}
+.stripes i:nth-child(1){background:var(--red)}.stripes i:nth-child(2){background:#fff}.stripes i:nth-child(3){background:#000}
+#gate h2{font-family:var(--title);font-weight:700;font-size:clamp(2.2rem,11vw,3.2rem);line-height:1.3;
+  background:linear-gradient(180deg,var(--gold2),var(--gold) 60%,#a8741f);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(255,150,60,.45))}
+#gate p{font-size:1.1rem;color:var(--muted);max-width:18em;line-height:1.9}
+.enter{margin-top:6px;border:1.5px solid var(--gold);color:var(--gold2);background:rgba(227,176,75,.08);border-radius:40px;padding:14px 38px;
+  font-family:var(--title);font-size:1.35rem;cursor:pointer;animation:call 2.8s ease-in-out infinite}
+@keyframes call{50%{box-shadow:0 0 34px rgba(255,160,70,.55);background:rgba(227,176,75,.18)}}
+@keyframes breathe{50%{transform:scale(1.06)}}
+
+/* ---------- page ---------- */
+main{position:relative;z-index:2;min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:clamp(12px,2.2vh,20px);padding:30px 22px 44px;max-width:460px;margin:0 auto;text-align:center}
+.rv{opacity:0;transform:translateY(18px);transition:opacity 1.6s ease,transform 1.6s ease}
+.on .rv{opacity:1;transform:none}
+.on .d1{transition-delay:.6s}.on .d2{transition-delay:1.6s}.on .d3{transition-delay:2.6s}.on .d4{transition-delay:3.6s}.on .d5{transition-delay:4.6s}
+
+.title{font-family:var(--title);font-weight:700;line-height:1;
+  background:linear-gradient(180deg,#fff7d6 0%,var(--gold) 55%,#a06a1c 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 2px 0 rgba(60,20,0,.7)) drop-shadow(0 0 22px rgba(255,140,50,.5))}
+.title .big{display:block;font-size:clamp(3.6rem,19vw,5.2rem)}
+.year{display:flex;align-items:center;gap:12px;justify-content:center;margin-top:6px;font-size:1.5rem;letter-spacing:.2em;color:var(--gold2);font-weight:700}
+.year::before,.year::after{content:"";height:1px;width:56px;background:linear-gradient(90deg,transparent,var(--gold))}
+.year::after{transform:scaleX(-1)}
+.sub{font-size:1.25rem;color:var(--text);text-shadow:0 2px 10px rgba(0,0,0,.7)}
+
+/* artwork */
+.art-wrap{position:relative;width:min(74vw,310px);aspect-ratio:300/340}
+.art-wrap::before{content:"";position:absolute;inset:-12%;border-radius:50%;z-index:-1;
+  background:radial-gradient(closest-side,rgba(255,130,40,.5),rgba(206,17,38,.18) 60%,transparent 78%);animation:glow 5s ease-in-out infinite}
+.art{position:relative;width:100%;height:100%;border-radius:10px;overflow:hidden;
+  box-shadow:0 0 0 2px rgba(227,176,75,.7),0 0 0 7px #1a0f09,0 0 0 8px rgba(227,176,75,.4),0 26px 60px rgba(0,0,0,.7)}
+.art svg,.art img{width:100%;height:100%;display:block;object-fit:cover}
+.art img{position:absolute;inset:0}
+.art::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(100% 100% at 50% 40%,transparent 55%,rgba(20,8,0,.55))}
+@keyframes glow{50%{opacity:.65;transform:scale(1.07)}}
+.playing .art-wrap::before{animation:beat 1.8s ease-in-out infinite}
+@keyframes beat{0%,100%{opacity:.7;transform:scale(1)}15%{opacity:1;transform:scale(1.09)}30%{opacity:.8;transform:scale(1.02)}}
+#flagwrap{transform:translateY(95px);transition:transform 6s cubic-bezier(.3,.1,.2,1) .8s}
+.on #flagwrap{transform:translateY(0)}
+
+/* player */
+.player{width:100%}
+.song{font-family:var(--title);font-weight:700;font-size:clamp(1.5rem,6.6vw,1.9rem);line-height:1.5;color:#fff;text-shadow:0 0 18px rgba(255,150,60,.55);overflow-wrap:anywhere}
+.artist{font-size:.98rem;color:var(--muted);margin-top:2px}
+.progress{direction:ltr;margin-top:16px;display:flex;align-items:center;gap:12px;font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums;font-family:system-ui,sans-serif}
+.progress time{min-width:38px}
+.bar{position:relative;flex:1;height:32px;display:flex;align-items:center;touch-action:none;cursor:pointer}
+.track{position:relative;width:100%;height:4px;border-radius:4px;background:rgba(255,240,210,.2)}
+.fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:4px;background:linear-gradient(90deg,var(--red),#fff 50%,var(--gold));box-shadow:0 0 10px rgba(255,150,60,.7)}
+.knob{position:absolute;top:50%;left:0;width:15px;height:15px;margin:-7.5px 0 0 -7.5px;border-radius:50%;background:var(--gold2);box-shadow:0 0 14px 3px rgba(255,160,60,.8);transition:transform .15s}
+.bar.drag .knob{transform:scale(1.4)}
+.play{margin:18px auto 0;width:88px;height:88px;border-radius:50%;border:0;cursor:pointer;color:#2a1100;display:grid;place-items:center;
+  background:radial-gradient(circle at 35% 30%,#fff3c4,var(--gold) 55%,#9b6217);
+  box-shadow:0 0 0 2px rgba(255,240,190,.5) inset,0 0 0 6px rgba(20,8,0,.55),0 12px 34px rgba(0,0,0,.6),0 0 46px rgba(255,150,50,.45);
+  transition:transform .2s}
+.play:active{transform:scale(.93)}
+@media(hover:hover){.play:hover{transform:scale(1.05)}}
+.play:focus-visible,.bar:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.play svg{width:34px;height:34px;fill:currentColor}
+.play .i-pause{display:none}.playing .play .i-play{display:none}.playing .play .i-pause{display:block}
+.hint{margin-top:12px;font-size:1rem;color:var(--muted);min-height:1.5em}
+.hint a{color:var(--gold2)}
+
+.vow{font-size:1.3rem;line-height:1.9;color:#fff;max-width:15em;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.foot{font-family:var(--title);font-size:1.35rem;color:var(--gold)}
+.years{font-size:.95rem;color:var(--muted)}
+
+#yt{position:fixed;width:200px;height:113px;right:0;bottom:0;opacity:.01;pointer-events:none;z-index:-1}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}}
+@media(max-height:660px){.art-wrap{width:min(52vw,210px)}}
+</style>
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<!-- opening: one tap = a user gesture, so the song can start on every phone -->
+<div id="gate" role="button" tabindex="0" aria-label="ابدأ">
+  <div class="stripes" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h2>٦ أكتوبر<br>١٩٧٣</h2>
+  <p>اللحظة اللي غيّرت التاريخ.. ارفع الصوت واسمعها.</p>
+  <button class="enter" type="button">اضغط للعبور</button>
+</div>
+
+<main id="app">
+  <header>
+    <h1 class="title rv d1"><span class="big">٦ أكتوبر</span></h1>
+    <div class="year rv d1">١٩٧٣</div>
+    <p class="sub rv d2" style="margin-top:10px">نصر صنعه شعب ..</p>
+  </header>
+
+  <div class="art-wrap rv d2">
+    <div class="art">
+      <!-- ضع صورة التصميم باسم cover.jpg بجوار هذا الملف لتظهر بدل الرسم -->
+      <svg viewBox="0 0 300 340" role="img" aria-label="جنود يرفعون العلم المصري عند غروب الشمس على القناة">
+        <defs>
+          <linearGradient id="sk" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#16295a"/><stop offset=".35" stop-color="#5a5a9a"/>
+            <stop offset=".6" stop-color="#e8855a"/><stop offset=".8" stop-color="#ffb347"/>
+          </linearGradient>
+          <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff6c8"/><stop offset=".25" stop-color="#ffc25a"/><stop offset="1" stop-color="#ff7a2f" stop-opacity="0"/></radialGradient>
+          <linearGradient id="wt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffa24a"/><stop offset=".4" stop-color="#8b4a5e"/><stop offset="1" stop-color="#1c1330"/></linearGradient>
+          <filter id="wave" x="-10%" y="-20%" width="120%" height="140%">
+            <feTurbulence type="fractalNoise" baseFrequency=".018 .07" numOctaves="1" seed="3" result="t">
+              <animate attributeName="baseFrequency" dur="5s" values=".018 .07;.03 .1;.018 .07" repeatCount="indefinite"/>
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="t" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+          </filter>
+          <filter id="bl"><feGaussianBlur stdDeviation="5"/></filter>
+          <symbol id="sol" viewBox="0 0 30 56">
+            <path d="M6 9a9 6 0 0 1 18 0z"/><circle cx="15" cy="12" r="5"/>
+            <path d="M5 56V28q0-12 10-12t10 12v28z"/><path d="M24 30l6-16" stroke="#0a0604" stroke-width="2.4" fill="none"/>
+          </symbol>
+        </defs>
+        <rect width="300" height="340" fill="url(#sk)"/>
+        <g fill="#2a1840" opacity=".55" filter="url(#bl)"><ellipse cx="60" cy="120" rx="70" ry="10"/><ellipse cx="250" cy="150" rx="60" ry="9"/><ellipse cx="120" cy="190" rx="90" ry="8"/></g>
+        <circle cx="150" cy="212" r="80" fill="url(#sun)"/>
+        <!-- smoke on horizon -->
+        <g fill="#1b0f10" opacity=".7" filter="url(#bl)"><ellipse cx="40" cy="205" rx="40" ry="14"/><ellipse cx="260" cy="203" rx="40" ry="12"/></g>
+        <!-- jets -->
+        <g fill="#14090b"><path d="M222 78l22-3 8 3-8 3z"/><path d="M236 92l20-3 7 3-7 3z"/></g>
+        <g stroke="#fff" stroke-opacity=".5" stroke-width="1.5" stroke-linecap="round"><path d="M222 79L150 98"/><path d="M236 93L170 110"/></g>
+        <!-- water -->
+        <rect y="215" width="300" height="125" fill="url(#wt)"/>
+        <g stroke="#ffd27a" stroke-linecap="round" opacity=".75"><path d="M120 222h60M128 230h44M135 238h30M141 246h18" stroke-width="2.2"/></g>
+        <!-- ships and bridge -->
+        <g fill="#150b12"><path d="M10 222h22l-3 6H13z"/><path d="M52 219h18l-2 5H54z"/><path d="M210 221h24l-3 6h-18z"/><path d="M255 218h22l-3 6h-16z"/><path d="M90 224h16l-2 4H92z"/></g>
+        <path d="M0 262L300 238" stroke="#2a1520" stroke-width="5"/>
+        <!-- foreground hill -->
+        <path d="M0 340V276q40-16 90-4t100-6q60 8 110-4v78z" fill="#2c140b"/>
+        <path d="M0 340V300q50-14 110-6t190-10v56z" fill="#170a05"/>
+        <!-- soldiers -->
+        <g fill="#0a0604">
+          <use href="#sol" x="14" y="272" width="30" height="56"/>
+          <use href="#sol" x="62" y="282" width="26" height="48"/>
+          <use href="#sol" x="196" y="278" width="28" height="52"/>
+          <use href="#sol" x="236" y="286" width="26" height="48"/>
+          <use href="#sol" x="140" y="258" width="38" height="70"/>
+        </g>
+        <!-- pole + flag -->
+        <line x1="176" y1="270" x2="168" y2="42" stroke="#0a0604" stroke-width="2.6"/>
+        <g id="flagwrap">
+          <g filter="url(#wave)" transform="translate(168 44) rotate(2)">
+            <rect width="86" height="15" fill="#ce1126"/><rect y="15" width="86" height="15" fill="#fff"/><rect y="30" width="86" height="15" fill="#000"/>
+            <g transform="translate(43 22.5)" fill="#c9962b"><circle r="5.2"/><path d="M-7-1q7-8 14 0q-3 5-7 6q-4-1-7-6z" fill="#e3b04b"/></g>
+          </g>
+        </g>
+      </svg>
+      <img src="cover.jpg" alt="" onerror="this.remove()">
+    </div>
+  </div>
+
+  <section class="player rv d3" aria-label="مشغل الأغنية">
+    <div class="song" id="title">جارٍ التحميل…</div>
+    <div class="artist">٦ أكتوبر ١٩٧٣</div>
+    <div class="progress">
+      <time id="cur">0:00</time>
+      <div class="bar" id="bar" role="slider" tabindex="0" aria-label="تقديم" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="track"><div class="fill" id="fill"></div><div class="knob" id="knob"></div></div>
+      </div>
+      <time id="dur">0:00</time>
+    </div>
+    <button class="play" id="play" aria-label="تشغيل">
+      <svg class="i-play" viewBox="0 0 24 24"><path d="M8 5.2v13.6a1 1 0 0 0 1.5.85l11-6.8a1 1 0 0 0 0-1.7l-11-6.8A1 1 0 0 0 8 5.2z"/></svg>
+      <svg class="i-pause" viewBox="0 0 24 24"><rect x="6" y="4.5" width="4.2" height="15" rx="1.4"/><rect x="13.8" y="4.5" width="4.2" height="15" rx="1.4"/></svg>
+    </button>
+    <p class="hint" id="hint"></p>
+  </section>
+
+  <p class="vow rv d4">هنا تعلّم العالم أن الإرادة أقوى من المستحيل ..</p>
+  <p class="foot rv d5">مصر دائماً .. قصة نصر</p>
+  <p class="years rv d5" id="years"></p>
+</main>
+
+<div id="yt"><div id="ytplayer"></div></div>
+
+<script>
+const VIDEO_ID = 'zt02-CkBnI4';
+const SONG_TITLE = '';               // اتركه فارغاً لاستخدام عنوان يوتيوب، أو اكتب اسم الأغنية هنا
+const WATCH_URL = 'https://youtu.be/' + VIDEO_ID;
+
+const $ = id => document.getElementById(id);
+const el = {app:$('app'),gate:$('gate'),play:$('play'),title:$('title'),cur:$('cur'),dur:$('dur'),bar:$('bar'),fill:$('fill'),knob:$('knob'),hint:$('hint')};
+const fmt = s => { s = Math.max(0, Math.floor(s||0)); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); };
+const ar = n => n.toLocaleString('ar-EG');
+
+/* years since the victory (Oct 6, 1973) */
+(function(){
+  const d = new Date(), pass = d.getMonth() > 9-1 || (d.getMonth() === 9 && d.getDate() >= 6);
+  const y = d.getFullYear() - 1973 - (pass ? 0 : 1);
+  $('years').textContent = 'مرّت ' + ar(y) + ' عاماً.. وما زال النصر يُروى';
+})();
+
+/* ---------- YouTube engine ---------- */
+let yt, ready = false, playing = false, duration = 0, dragging = false, wantPlay = false;
+const s = document.createElement('script'); s.src = 'https://www.youtube.com/iframe_api'; document.head.appendChild(s);
+
+window.onYouTubeIframeAPIReady = () => {
+  yt = new YT.Player('ytplayer', {
+    videoId: VIDEO_ID, width:'200', height:'113',
+    playerVars:{playsinline:1,controls:0,disablekb:1,rel:0,modestbranding:1,fs:0,iv_load_policy:3,origin:location.origin},
+    events:{onReady,onStateChange,onError}
+  });
+};
+function onReady(){
+  ready = true; duration = yt.getDuration(); el.dur.textContent = fmt(duration); setTitle();
+  if(wantPlay){ yt.unMute(); yt.setVolume(100); yt.playVideo(); }
+}
+function onStateChange(e){
+  const S = YT.PlayerState; playing = e.data === S.PLAYING;
+  document.body.classList.toggle('playing', playing);
+  el.app.classList.toggle('playing', playing);
+  el.play.setAttribute('aria-label', playing ? 'إيقاف مؤقت' : 'تشغيل');
+  if(e.data === S.PLAYING || e.data === S.PAUSED){ duration = yt.getDuration(); el.dur.textContent = fmt(duration); setTitle(); }
+  if(playing) el.hint.textContent = '';
+  if(e.data === S.PAUSED) el.hint.textContent = 'متوقف مؤقتاً';
+  if(e.data === S.ENDED){ yt.seekTo(0); yt.pauseVideo(); update(0); el.hint.textContent = 'اضغط لتسمعها من جديد'; }
+}
+function onError(){ el.hint.innerHTML = 'تعذّر تشغيل الأغنية هنا. <a href="'+WATCH_URL+'" target="_blank" rel="noopener">افتحها على يوتيوب</a>'; }
+function setTitle(){ el.title.textContent = SONG_TITLE || (yt.getVideoData && yt.getVideoData().title) || 'نصر أكتوبر'; }
+
+/* ---------- Entrance ---------- */
+function enter(){
+  if(el.gate.classList.contains('out')) return;
+  wantPlay = true;
+  if(ready){ yt.unMute(); yt.setVolume(100); yt.playVideo(); } else el.hint.textContent = 'لحظات..';
+  el.gate.classList.add('out');
+  el.app.classList.add('on');
+  if(navigator.vibrate) navigator.vibrate([60,40,120]);
+}
+el.gate.addEventListener('click', enter);
+el.gate.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' ') enter(); });
+
+/* ---------- Controls ---------- */
+el.play.addEventListener('click', () => {
+  if(!ready){ el.hint.textContent = 'لحظات..'; wantPlay = true; return; }
+  playing ? yt.pauseVideo() : (yt.unMute(), yt.playVideo());
+});
+function update(t){
+  const p = duration ? Math.min(1, t/duration) : 0;
+  el.fill.style.width = (p*100)+'%'; el.knob.style.left = (p*100)+'%';
+  el.cur.textContent = fmt(t); el.bar.setAttribute('aria-valuenow', Math.round(p*100));
+}
+setInterval(() => { if(ready && !dragging && yt.getCurrentTime) update(yt.getCurrentTime()); }, 250);
+function seekFrom(e){
+  const r = el.bar.getBoundingClientRect();
+  const p = Math.min(1, Math.max(0, (e.clientX - r.left)/r.width)); update(p*duration); return p*duration;
+}
+el.bar.addEventListener('pointerdown', e => { if(!ready) return; dragging = true; el.bar.classList.add('drag'); el.bar.setPointerCapture(e.pointerId); seekFrom(e); });
+el.bar.addEventListener('pointermove', e => { if(dragging) seekFrom(e); });
+el.bar.addEventListener('pointerup', e => { if(!dragging) return; dragging = false; el.bar.classList.remove('drag'); yt.seekTo(seekFrom(e), true); });
+el.bar.addEventListener('pointercancel', () => { dragging = false; el.bar.classList.remove('drag'); });
+el.bar.addEventListener('keydown', e => {
+  if(!ready) return; const d = e.key==='ArrowRight' ? 5 : e.key==='ArrowLeft' ? -5 : 0;
+  if(d){ yt.seekTo(Math.max(0, yt.getCurrentTime()+d), true); e.preventDefault(); }
+});
+
+/* ---------- Embers & dust ---------- */
+const cv = $('fx'), cx = cv.getContext('2d');
+let W,H,DPR,em=[],running=true;
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mk = (init) => ({x:Math.random()*W, y:init?Math.random()*H:H+10, r:Math.random()*1.8+.5, vy:-(Math.random()*.6+.2), ph:Math.random()*6.28, sw:Math.random()*.6+.2, a:Math.random()*.6+.3, h:Math.random()<.8?24:4});
+function resize(){
+  DPR = Math.min(devicePixelRatio||1,2); W = innerWidth; H = innerHeight;
+  cv.width = W*DPR; cv.height = H*DPR; cx.setTransform(DPR,0,0,DPR,0,0);
+  em = Array.from({length:Math.round(Math.min(70,W*H/9000))}, () => mk(true));
+}
+function frame(){
+  cx.clearRect(0,0,W,H);
+  for(const p of em){
+    p.ph += .02; p.x += Math.sin(p.ph)*p.sw*.5; p.y += p.vy;
+    if(p.y < -10){ Object.assign(p, mk(false)); }
+    const f = .6 + .4*Math.sin(p.ph*3);
+    const g = cx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*4);
+    g.addColorStop(0,'hsla('+p.h+',100%,62%,'+(p.a*f)+')'); g.addColorStop(1,'hsla('+p.h+',100%,55%,0)');
+    cx.fillStyle = g; cx.beginPath(); cx.arc(p.x,p.y,p.r*4,0,6.283); cx.fill();
+  }
+}
+function loop(){ if(!running) return; frame(); if(!reduce) requestAnimationFrame(loop); }
+document.addEventListener('visibilitychange', () => { running = !document.hidden; if(running) loop(); });
+addEventListener('resize', () => { resize(); if(reduce) frame(); });
+resize(); loop();
+</script>
+</body>
+</html>
